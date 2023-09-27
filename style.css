@@ -1,0 +1,508 @@
+body{
+ margin: 0;
+ font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+ font-weight: 500;
+}
+
+
+.Header-common{
+ position: absolute;
+ width: 100%;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+.Header-content{
+ max-width: 100%;
+ display: flex;
+ justify-content: space-between;
+ margin: 0 36px;
+ position: relative;
+}
+
+.Header-logo{
+ align-self: center;
+
+}
+
+.Header-left{
+ display: block;
+ padding-left: 10px;
+ width: auto;
+ height: 20px;
+}
+
+
+
+
+.HeaderNavHamburger {
+display: none;
+
+}
+
+
+.Header-right{
+text-decoration: none;
+color: black;
+margin: 0 45px 0 0;
+text-align: center;
+height: 40px;
+display: inline-block;
+}
+
+.Header-right > span{
+ display: block;
+ font-weight: 700;
+ text-align: center;
+}
+
+.Header-right > span:first-child{
+ font-family: 'Lato',sans-serif;
+ font-size: 14px
+}
+
+.Header-right > span:last-child{
+ font-size: 10px;
+}
+
+li:hover{
+ opacity: 0.5;
+}
+
+.Header-list{
+ align-items: center;
+ display: flex;
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+
+.most-headerright{
+ text-decoration: none; 
+ background-color: #f79214;
+ color: white;
+ padding: 0 20px;
+ height: 40px;
+ text-align: center;
+ font-weight: 500;
+ border-radius: 9999px;
+ font-size: 12px
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.most-headerright:hover{
+ opacity: 0.5;
+}
+
+
+
+
+@media screen and (max-width: 1080px){
+ 
+Header{
+ background-color: white;
+ z-index: 20;
+ 
+}
+
+.Header-common{
+ position: fixed !important
+}
+
+.HeaderNav{
+ cursor: pointer;
+ display: block;
+ position: relative;
+ width: 30px;
+ height: 21px;
+ z-index: 15;
+ opacity: 1;
+}
+
+.HeaderNavHamburger-line:first-child {
+ top: 0;
+}
+
+.HeaderNavHamburger-line{
+ position: absolute;
+ top: 50%;
+ display: block;
+ width: 100%;
+ height: 3px;
+ background-color: #333;
+ transform: translate(0,-50%);
+ border-radius: 10px;
+ transition: top .2s,transform .2s,opacity .3s;
+}
+.HeaderNavHamburger-line:last-child {
+top: 100%;
+}
+
+.Header-list{
+ position: fixed;
+ top: 60px;
+ left: 100%;
+ width: 100%;
+ display: block;
+ padding-top: 20px;
+ padding-bottom: 75px;
+ transition: transform .5s;
+ z-index: 99;
+ background-color: black;
+ heigth: 100%;
+ overflow-y: scroll;
+ transtion: opacity .2s;
+}
+
+.Header-rigth{
+ margin-right: 0;
+}
+
+
+.most-Headerright{
+ margin-top: 20px;
+ font-size: 16px;
+ margin: 0 auto;
+ height: 60px;
+ width: 250px;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+ 
+.Header-common{
+  padding-top: 15px;
+  padding-bottom: 15px;
+ }
+ 
+ .Header-content{
+  max-width: 100%;
+  margin: 0 20px;
+ }
+ .Header-left{
+  display: block;
+  height: 16px;
+ }
+}
+
+@media screen and (min-width: 768px){
+ .Header-left:hover{
+  opacity: 0.5;
+ }
+}
+
+
+
+
+.text {
+ background-size: cover;
+ background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+ background-position: center;
+ padding-top: 100px;
+ padding-bottom: 28px;
+}
+
+.image{
+ display: none;
+ width: 100%;
+ border: 0;
+ vertical-align: middle;
+}
+
+
+.main{
+ display: block;
+ 
+}
+
+.more{
+ max-width: 1140px;
+ padding-left: 50px;
+ padding-right: 50px;
+ position: relative; 
+ margin-left: auto;
+ margin-right: auto;
+}
+.totle{
+ margin-bottom: 70px;
+ width: fit-content;
+}
+
+.title{
+ font-family: "Lato",sans-serif;
+ font-size: 40px;
+ font-weight: 700;
+ margin-bottom: 15px;
+ text-align: center;
+ line-height: 54px;
+}
+
+.text3{
+ margin-bottom: 25px;
+ display: flex;
+}
+
+.text-left{
+ margin-right: 8px;
+}
+.text-middle{
+margin-right: 8px;
+}
+
+.text-middle:nth-of-type(2) {
+ width: 40%;
+}
+
+.text-rigth{
+ margin-right: 0;
+}
+
+.again{
+ text-decoration: none; 
+ background-color: #f79214;
+ color: white;
+ padding: 0 20px;
+ height: 64px;
+ text-align: center;
+ font-weight: 500;
+ border-radius: 9999px;
+ font-size: 16px;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.again:hover{
+ opacity: 0.5;
+}
+.learnmore{
+ color: #a2a2a4;
+ font-size: 12px;
+}
+
+.learnmore a{
+ color: #a2a2a4;
+ text-decoration: none;
+}
+
+@media screen and (max-1080px){
+ 
+ main{
+  padding-top: 60px;
+ }
+}
+
+
+@media screen and (max-width: 767px){
+ 
+ main{
+  padding-top: 52px;
+ }
+ 
+.text{
+ background-image: none;
+ padding-top: 0;
+ padding-bottom: 35px;
+}
+
+.image{
+ display: block;
+ 
+}
+
+.more{
+ max-width: none;
+ padding-right: 20px;
+ padding-left: 20px;
+ margin-top: -45vw;
+}
+
+.totle{
+ margin-bottom: 20px;
+ width: 100%;
+}
+
+.title{
+ font-size: 25px;
+ line-heigth: 36px;
+ margin-left: calc(((100vw - 100%)/2)*-1);
+ margin-right: calc(((100vw - 100%)/2)*-1);
+    
+}
+.text3{
+ width: 100%;
+}
+
+img{
+ width: 27.5%;
+}
+
+.text-middle{
+ width: 40%;
+}
+}
+
+
+
+
+.footer{
+ background-color: #f79214;
+ padding: 44px 0;
+}
+
+.footer-main{
+ max-width: 1140px;
+ align-items: center;
+ display: flex;
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 50px;
+ padding-right: 50px;
+ justify-content: space-between;
+ position: relative;
+}
+
+.video{
+ width: 50%;
+}
+
+.flaze{
+ display: flex;
+ width: 100%;
+ margin-bottom: 0;
+ margin-left: 32px;
+ flex-direction: column;
+ color: white;
+ align-items: flex-start;
+}
+
+ .flaze h2{
+ font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+ font-weight: 900;
+ letter-spacing: .1em;
+ width: 100%;
+ line-height: 54px;
+ margin-bottom: 8px;
+ text-align: left;
+ font-size: 38px;
+}
+
+.flaze br {
+ display: none;
+}
+
+.flaze p{
+ line-height: 26px;
+ margin-bottom: 25px;
+ font-weight: 700;
+ font-size: 16px;
+ text-align: left;
+}
+
+
+.flaze a >img{
+ width: 158px;
+}
+
+.flaze h2 >span{
+ font-family: 'Lato',sans-serif;
+ font-size: 38px;
+}
+
+
+@media screen and (max-width: 1024px){
+.footer-main{
+  flex-direction: column;
+}
+.video{
+  margin-bottom: 16px;
+  width: 75%;
+ }
+.flaze{
+  margin-left: 0;
+}
+
+.flaze h2{
+  margin-top: 0;
+}
+
+.flaze p{
+ margin-bottom: 32px;
+ margin-top: 0;
+}
+ .last{
+  margin: auto;
+ }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+ 
+
+.footer-main{
+ max-width: none;
+ padding-left: 20px;
+ padding-right: 20px
+}
+.video{
+ width: 100%;
+}
+
+.flaze{
+ margin-bottom: 0;
+ width: 100%;
+ 
+}
+
+.flaze h2{
+ font-size: 33px;
+ line-height: 48px;
+ margin-top: 0;
+}
+
+.flaze h2 span{
+ letter-spacing: 1px;
+}
+
+}
+
+
+
+@media screen and (max-width: 400px){
+
+.flaze h2{
+  font-size: 33px;
+  line-height: 1.4;
+  white-space: pre;
+  word-break: keep-all;
+  
+ }
+}
+
+
+
+
+
+
+
+
+*, *:before, *:after {
+ word-break: break-all;
+ box-sizing: border-box;
+}
