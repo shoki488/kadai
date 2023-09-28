@@ -204,7 +204,7 @@ top: 100%;
 
 .text {
  background-size: cover;
- background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg");
+ background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
  background-position: center;
  padding-top: 100px;
  padding-bottom: 28px;
